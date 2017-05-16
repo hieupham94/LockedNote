@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LockedNote.Login"
+             Title="LogIn">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+
+            <Grid>
+                <Label Text="User: " />
+                <Entry x:Name="User" TranslationX="30"/>
+            </Grid>
+            <Grid>
+                <Label Text="Pass: " />
+                <Entry x:Name="Pass" TranslationX="30"/>
+            </Grid>
+
+            <Button Text="LOG IN" Clicked="LoginClicked"/>
+            <Button Text="Forget" Clicked="ForgetClicked"/>
+
+            <Label x:Name="Error" Text="" TextColor="Red" />
+
+        </StackLayout>
+    </ContentPage.Content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ContentPage>

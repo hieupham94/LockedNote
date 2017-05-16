@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LockedNote.Forget"
+             Title="Forget User and Pass">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Forget User_Pass Page" HorizontalOptions="Center" Font="Bold"/>
+            <Label Text="________________" HorizontalOptions="Center" />
+
+            <Grid>
+                <Label Text="Q1: " />
+                <Entry x:Name="Q1" TranslationX="25" />
+            </Grid>
+
+            <Grid>
+                <Label Text="Q2: " />
+                <Entry x:Name="Q2" TranslationX="25" />
+            </Grid>
+
+            <Grid Padding="0,40,5,0">
+                <Label Text="New User: " />
+                <Entry x:Name="newU" TranslationX="25" TranslationY="15"/>
+            </Grid>
+
+            <Grid Padding="0,40,5,10">
+                <Label Text="New Pass: " />
+                <Entry x:Name="newP" TranslationX="25" TranslationY="15"/>
+            </Grid>
+
+            <Button x:Name="Submit" Text="Submit" Clicked="SubmitClicked" />
+            <Label x:Name="Error" Text="" TextColor="Red" />
+
+        </StackLayout>
+    </ContentPage.Content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ContentPage>
